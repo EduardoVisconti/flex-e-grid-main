@@ -10,8 +10,8 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* Criando 4 colunas */
-    grid-template-rows: 1fr 1fr 1fr 1fr; /* Criando 4 linhas */
+    grid-template-columns: repeat(4, 1fr); /* Criando 4 colunas */
+    grid-template-rows: repeat(4, 1fr); /* Criando 4 linhas */
     gap: 16px;
 }
 
@@ -28,7 +28,8 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    grid-row: span 3; /* Oculpa as 3 linhas */
+    grid-column: 4 / span 1; /* Primeiro colocamos em qual coluna queremos, depois o quanto de espaço */
+    grid-row: 1 / span 3; /* Oculpa as 3 linhas */
 }
 
 .meio {
@@ -36,8 +37,8 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    grid-column: span 2;
-    grid-row: span 3;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 3;
 }
 
 .direita-cima {
@@ -45,6 +46,8 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
+    grid-row: 3;
+    grid-column: 1;
 }
 
 .direita-baixo {
@@ -52,5 +55,6 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    grid-row: span 2;
+    grid-column: 1;
+    grid-row: 1 / span 2;
 }
