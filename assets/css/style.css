@@ -163,7 +163,7 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
-    .menu__lateral {
+    .menu-lateral {
         position: static;
         width: 200px;
         grid-column: 1;
@@ -328,7 +328,7 @@ body {
     .cartao__link {
         font-size: 0.8rem;
         font-weight: 600;
-        color: #0488DC;
+        color: #0480DC;
         justify-self: flex-end;
     }
 
@@ -384,7 +384,7 @@ body {
     }
     
     .destaque-produtos {
-        grid-area: destaque-produto;
+        grid-area: destaque-produtos;
     }
     
     .produtos-recentes {
