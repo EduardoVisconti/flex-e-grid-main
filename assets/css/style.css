@@ -231,6 +231,7 @@ body {
 }
 
 .cartao__destaque {
+    font-weight: 700; /* Testando */
     grid-column: span 2;
 }
 
@@ -262,6 +263,11 @@ body {
     margin-right: 8px;
 }
 
+.cartao__info--valor::before {
+    content: "\e905";
+    margin-right: 8px;
+}
+
 .cartao__botao {
     display: flex;
     justify-content: center;
@@ -281,6 +287,11 @@ body {
 
 .cartao__botao--localizacao::before {
     content: "\e908";
+    font-size: 24px;
+}
+
+.cartao__botao--carrinho::before {
+    content: "\e901";
     font-size: 24px;
 }
 
